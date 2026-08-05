@@ -245,6 +245,7 @@ std::chrono::high_resolution_clock
 
 Reported timings are in microseconds.
 
+BFS Testcase
 | Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
 |-----------|-------------:|----------:|------------|---------------------:|
 | bfs_10.txt | 10 | 15 | Connected Sparse | 2 |
@@ -254,6 +255,7 @@ Reported timings are in microseconds.
 | bfs_100000.txt | 100000 | 250419 | Connected sparse | 5739 |
 
 ---
+DFS Testcase
 | Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
 |-----------|-------------:|----------:|------------|---------------------:|
 | dfs_10.txt | 10 | 15 | Connected Sparse | 3 |
@@ -263,6 +265,8 @@ Reported timings are in microseconds.
 | dfs_50000.txt | 50000 | 125141 | Connected sparse | 3363 |
 | dfs_100000.txt | 100000 | 250108 | Connected sparse | 3032 |
 
+---
+SSSP Test Cases
 | Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
 |-----------|-------------:|----------:|------------|---------------------:|
 | sssp_10.txt | 10 | 15 | Connected Sparse | 2 |
