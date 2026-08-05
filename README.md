@@ -245,21 +245,13 @@ std::chrono::high_resolution_clock
 
 Reported timings are in milliseconds.
 
-| Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (ms) |
+| Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
 |-----------|-------------:|----------:|------------|---------------------:|
-| bfs_10.txt | 10 | 12 | Connected Sparse | 0.005234 |
-| bfs_100.txt | 100 | 99 | Chain | 0.003838 |
-| bfs_10000.txt | 10000 | 9999 | Chain | 0.275331 |
-| bfs_50000.txt | 50000 | 49999 | Chain | 24.5791 |
-| bfs_100000.txt | 100000 | 99999 | Chain | 24.6112 |
-
-| Test File | Matrix Size | Simple GEMM (ms) | Blocked GEMM (ms) |
-|-----------|------------:|-----------------:|------------------:|
-| gemm_test_01.txt | 2 x 3 and 3 x 2 | 0.002371 | 0.001847 |
-| gemm_test_02.txt | 99 x 99 and 99 x 99 | 0.815193 | 0.938234 |
-| gemm_test_03.txt | 70 x 80 and 80 x 90 | 0.937587 | 0.96552 |
-| gemm_test_04.txt | 20 x 25 and 25 x 30 | 0.026406 | 0.041937 |
-| gemm_test_05.txt | 200 x 205 and 205 x 210 | 6.77056 | 12.4146| 
+| bfs_10.txt | 10 | 15 | Connected Sparse | 2 |
+| bfs_100.txt | 100 | 246 | Connected sparse | 6 |
+| bfs_10000.txt | 10000 | 25249 | Connected sparse | 218 |
+| bfs_50000.txt | 50000 | 125038 | Connected sparse | 657 |
+| bfs_100000.txt | 100000 | 250419 | Connected sparse | 5739 |
 
 ---
 
