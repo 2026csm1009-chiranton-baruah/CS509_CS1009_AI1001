@@ -222,7 +222,19 @@ The implementation supports:
 
 # Test Cases
 
-The following graph sizes were prepared according to the assignment specification.
+The following graph sizes were prepared according to the follwing nomencalture.
+
+---
+
+```
+
+algorithm_N.txt
+
+```
+where 'algorithm' can be 'bfs', 'dfs' or 'sssp' and 'N' (the number of vertices) can be 10, 100, 10000, 50000 and 100000
+
+---
+
 
 | Test File | Vertices | Graph Type |
 |------------|---------:|------------|
