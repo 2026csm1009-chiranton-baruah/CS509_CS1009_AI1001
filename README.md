@@ -243,7 +243,7 @@ Execution times are measured using
 std::chrono::high_resolution_clock
 ```
 
-Reported timings are in milliseconds.
+Reported timings are in microseconds.
 
 | Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
 |-----------|-------------:|----------:|------------|---------------------:|
@@ -254,6 +254,14 @@ Reported timings are in milliseconds.
 | bfs_100000.txt | 100000 | 250419 | Connected sparse | 5739 |
 
 ---
+| Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (microseconds) |
+|-----------|-------------:|----------:|------------|---------------------:|
+| dfs_10.txt | 10 | 15 | Connected Sparse | 3 |
+| dfs_100.txt | 100 | 255 | Connected sparse | 6 |
+| dfs_5000.txt | 100000 | 12395 | Connected sparse | 3032 |
+| dfs_10000.txt | 10000 | 25165 | Connected sparse | 323 |
+| dfs_50000.txt | 50000 | 125141 | Connected sparse | 3363 |
+| dfs_100000.txt | 100000 | 250108 | Connected sparse | 3032 |
 
 # Software Requirements
 
