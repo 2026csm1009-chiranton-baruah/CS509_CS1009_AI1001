@@ -250,7 +250,7 @@ BFS Testcase
 |-----------|-------------:|----------:|------------|---------------------:|
 | bfs_10.txt | 10 | 15 | Connected Sparse | 2 |
 | bfs_100.txt | 100 | 246 | Connected sparse | 6 |
-| bfs_5000.txt | 5000 | 12550 | Connected sparse | 218 |
+| bfs_5000.txt | 5000 | 12550 | Connected sparse | 181 |
 | bfs_10000.txt | 10000 | 25249 | Connected sparse | 218 |
 | bfs_50000.txt | 50000 | 125038 | Connected sparse | 657 |
 | bfs_100000.txt | 100000 | 250419 | Connected sparse | 5739 |
