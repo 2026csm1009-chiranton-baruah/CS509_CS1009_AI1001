@@ -10,9 +10,6 @@ void assignment1Menu()
     string filename;
 
     cout << "\n===== Assignment 1 =====\n\n";
-
-    // cout << "1. GEMM Simple\n";
-    // cout << "2. GEMM Blocking\n";
     cout << "1. BFS\n";
     cout << "2. DFS\n";
     cout << "3. SSSP\n\n";
@@ -43,8 +40,6 @@ int main()
         cout << "=====================================\n\n";
 
         cout << "1. Assignment 1\n";
-        // cout << "2. Assignment 2\n";
-        // cout << "3. Assignment 3\n";
         cout << "0. Exit\n\n";
 
         cout << "Choice : ";
@@ -55,14 +50,6 @@ int main()
             case 1:
                 assignment1Menu();
                 break;
-
-            /*case 2:
-                cout << "Assignment 2 not available.\n";
-                break;
-
-            case 3:
-                cout << "Assignment 3 not available.\n";
-                break;*/
 
             case 0:
                 return 0;
