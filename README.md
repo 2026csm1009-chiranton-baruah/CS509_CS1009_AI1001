@@ -129,7 +129,7 @@ where V is the number of vertices and E is the number of edges in the graph.
 # Task 3 - Single Source Shortest Path (SSSP) using Dijkstra's Algorithm
 
 ## Implementations
-
+Here, we are using Dijkstra's algorithm to determine the single source shortest path from one node to all others across a graph
 
 
 # BFS / DFS file format
@@ -160,16 +160,56 @@ SOURCE 0
 
 ---
 
-# BFS Output
+# BFS / DFS Output
 
 For each implementation:
 
 - Resultant traversal
-- Execution time (milliseconds)
+- Execution time of traversal in microseconds
 
 ---
 
-# Task 2 — CSR Graph Representation
+# SSSP Input Format
+
+Input lines contain
+
+```
+V E
+u0 degree neighbor1 weight1 neighbor2 weight2 ...
+u1 degree neighbor1 weight1 neighbor2 weight2 ...
+...
+u(V-1) degree neighbor1 weight1 neighbor2 weight2 ...
+SOURCE s
+
+```
+
+---
+
+## Example
+
+```
+5 6
+0 2 1 4 2 1
+1 1 3 1
+2 2 1 2 3 5
+3 1 4 3
+4 0
+SOURCE 0
+```
+
+---
+
+# SSSP Output
+
+The output displays
+
+- Two-column table with vertices and distance from source of SSSP
+- Execution time of SSSP calculations in microseconds
+
+---
+
+
+# CSR Graph Representation
 
 The graph is initially supplied as an adjacency list and converted into Compressed Sparse Row (CSR) format.
 
@@ -177,66 +217,6 @@ The implementation supports:
 
 - Unweighted graphs
 - Weighted graphs
-
----
-
-# Graph Input Format
-
-First line:
-
-```
-Vertices Edges Weighted
-```
-
-where
-
-- Weighted = 0 → Unweighted
-- Weighted = 1 → Weighted
-
----
-
-## Unweighted Example
-
-```
-5 6 0
-0 1 2
-1 0 3
-2 0 4
-3 1
-4 2
-```
-
----
-
-## Weighted Example
-
-```
-5 6 1
-0 1 5 2 3
-1 2 8
-2 3 1
-3 4 2
-4
-```
-
-Each edge is stored as
-
-```
-destination weight
-```
-
----
-
-# CSR Output
-
-The program displays
-
-- Number of vertices
-- Number of edges
-- Row Pointer array
-- Column Index array
-- Weight array (weighted graphs only)
-- CSR conversion time
 
 ---
 
