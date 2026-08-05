@@ -235,27 +235,6 @@ where 'algorithm' can be 'bfs', 'dfs' or 'sssp' and 'N' (the number of vertices)
 
 ---
 
-
-| Test File | Vertices | Graph Type |
-|------------|---------:|------------|
-| csr_10.txt | 10 | Connected sparse graph |
-| csr_100.txt | 100 | Chain graph |
-| csr_10000.txt | 10000 | Sparse graph |
-| csr_50000.txt | 50000 | Sparse graph |
-| csr_100000.txt | 100000 | Sparse graph |
-
-The following GEMM test files are included.
-
-| Test File | Matrix Size |
-|------------|------------|
-| gemm_test_01.txt | 2 x 3 and 3 x 2 |
-| gemm_test_02.txt | 99 x 99 and 99 x 99 |
-| gemm_test_03.txt | 70 x 80 and 80 x 90 |
-| gemm_test_04.txt | 20 x 25 and 25 x 30 |
-| gemm_test_05.txt | 200 x 205 and 205 x 210 |
-
----
-
 # Performance Measurement
 
 Execution times are measured using
@@ -268,11 +247,11 @@ Reported timings are in milliseconds.
 
 | Test File | Vertices (V) | Edges (E) | Graph Type | Conversion Time (ms) |
 |-----------|-------------:|----------:|------------|---------------------:|
-| csr_10.txt | 10 | 12 | Connected Sparse | 0.005234 |
-| csr_100.txt | 100 | 99 | Chain | 0.003838 |
-| csr_10000.txt | 10000 | 9999 | Chain | 0.275331 |
-| csr_50000.txt | 50000 | 49999 | Chain | 24.5791 |
-| csr_100000.txt | 100000 | 99999 | Chain | 24.6112 |
+| bfs_10.txt | 10 | 12 | Connected Sparse | 0.005234 |
+| bfs_100.txt | 100 | 99 | Chain | 0.003838 |
+| bfs_10000.txt | 10000 | 9999 | Chain | 0.275331 |
+| bfs_50000.txt | 50000 | 49999 | Chain | 24.5791 |
+| bfs_100000.txt | 100000 | 99999 | Chain | 24.6112 |
 
 | Test File | Matrix Size | Simple GEMM (ms) | Blocked GEMM (ms) |
 |-----------|------------:|-----------------:|------------------:|
