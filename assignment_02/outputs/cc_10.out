@@ -1,0 +1,14 @@
+Algorithm: Connected Components
+Number of components: 5
+Vertex Component
+0 0
+1 0
+2 0
+3 0
+4 1
+5 1
+6 1
+7 2
+8 3
+9 4
+Execution time: 0.001626 ms
