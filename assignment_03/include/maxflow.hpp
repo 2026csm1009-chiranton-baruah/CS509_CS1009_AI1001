@@ -10,7 +10,6 @@ struct CutEdge {
     int to;
     int capacity;
 };
-
 struct MaxflowResult {
     int max_flow;
     int cut_capacity;
@@ -24,5 +23,4 @@ MaxflowResult maxflowMincut(
     int source,
     int sink
 );
-
 #endif
